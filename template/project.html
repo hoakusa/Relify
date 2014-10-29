@@ -1,0 +1,41 @@
+<div class="view-container">
+	<div class="l-sidebar">
+		<div class="l-content">
+			<div class="project-info"></div>
+			<div class="l-members">
+				<div class="l-create-member"></div>
+				<div class="l-list-member">
+					<ul>
+					<li class="l-name-member">Name</li>
+					<li class="l-edit-member"></li>
+					<li class="l-delete-member"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="r-container">
+		<div ng-include="'template/navigation.html'"></div>
+		<div class="r-content">
+			<div class="due-date"></div>
+			<div class="activities">
+				<ul>
+				<!-- <li class="event" ng-repeat="activity in activities">
+						<div class="date"><% activity.date %></div>
+						<div class="task-container">
+							<div class="taskbar" ng-repeat="task in tasks"><p><% activity.task %></p></div>
+						</div>
+					</li> -->
+				<li class="event">
+					<div class="date"></div>
+					<div class="task-container">
+						<div class="taskbar"><p></p></div>
+					</div>
+				</li>
+				</ul>
+			</div>
+			<div class="start-date"></div>
+		</div>
+	</div>	
+</div>

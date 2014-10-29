@@ -1,0 +1,29 @@
+<div class="view-container">
+	<div class="l-sidebar">
+		<div class="l-content">
+			<div class="filter">
+				<div>Filter</div>
+				<div><img src="#"></div>
+				<div class="drop-down"></div>
+			</div>
+
+			<div class="tagname"></div>
+			<div class="status"></div>
+		</div>
+	</div>
+
+	<div class="r-container">
+		<div ng-include="'template/navigation.html'"></div>
+		<div class="r-content">
+			<div class="create-task">
+				<p>Add new task</p>
+			</div>
+
+			<div class="task_list">
+				<ul ng-repeat="task in tasks">
+				
+				</ul>
+			</div>
+		</div>
+	</div>	
+</div>

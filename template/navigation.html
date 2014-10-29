@@ -1,0 +1,7 @@
+<div id="navigation" ng-controller="NavigationController">
+	<ul class="nav-tab">
+		<li ng-repeat="tab in tabs" ng-class="{active: tab.active}">
+			<a href="<% tab.link %>"><% tab.name %></a>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,36 @@
+<div class="view-container">
+	<div class="l-sidebar">
+		<div class="l-content">
+			<div class="filter">
+				<div>Filter</div>
+				<div><img src="#"></div>
+				<div class="drop-down"></div>
+			</div>
+
+			<div class="tagname"></div>
+			<div class="status"></div>
+		</div>
+	</div>
+
+	<div class="r-container">
+		<div class="r-content">
+			<div class="title">
+				<ul>
+					<li></li>
+					<li>Name</li>
+					<li>Status</li>
+					<li><a href="#">Email</li>
+				</ul>
+			</div>
+
+			<div class="member-list">
+				<ul ng-repeat="member in members">
+					<li><% member.id %></li>
+					<li><a href="#"><% member.name %></a></li>
+					<li><a href="#"><% member.status %></a></li>
+					<li><a href="#"><% member.email %></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
