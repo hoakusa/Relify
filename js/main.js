@@ -3,9 +3,13 @@ var app = angular.module('app', ['ngRoute', 'ngSanitize', 'ngAnimate'], function
         $interpolateProvider.endSymbol('%>');
     });
 
+app.controller("GlobalController", function($scope, $http) {
+    
+});
+
 // header
 app.controller("HeaderController", function($scope, $http) {
-    
+    $('.navbar').addClass("animated fadeInDown");
 });
 
 // navigation 
@@ -18,17 +22,24 @@ app.controller("NavigationController", function($scope, $http) {
     ];
 
     $scope.set_route = function(id) {
+        console.log(id);
         for (var i = 0; i < $scope.tabs.length(); i++) {
             $scope.tabs[i].active = false;
         }
         $scope.tabs[id].active = true;
-        $scope.tab = $scope.tabs[id].active;
+        $scope.tab = $scope.tabs[id];
     };
 });
 
 // home page
 app.controller("HomeController", function($scope, $http) {
-
+    $scope.projects = [
+    {id: "1", code: "MHK01", name: "Project 1", description: "A soft description about project", duedate: "01.01.2015", status: "Active", leader: "Mr.A"},
+    {id: "2", code: "MHK02", name: "Project 2", description: "A soft description about project", duedate: "01.01.2015", status: "New", leader: "Mr.B"},
+    {id: "3", code: "MHK03", name: "Project 3", description: "A soft description about project", duedate: "01.01.2015", status: "Finished", leader: "Mr.A"},
+    {id: "4", code: "MHK04", name: "Project 4", description: "A soft description about project", duedate: "01.01.2015", status: "Active", leader: "Mr.B"}
+    ];
+    $('.l-sidebar').addClass("animated fadeInLeft");
 });
 
 // main page
@@ -88,7 +99,7 @@ app.config(function($routeProvider, $locationProvider) {
 
 // style
 $(function() {
-
+    
 });
 
 // resize

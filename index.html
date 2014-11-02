@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html ng-app="app">
-	<head>
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	    <title>Management Tools</title>
-	    <link href='http://fonts.googleapis.com/css?family=Roboto:700,400italic,500,400' rel='stylesheet' type='text/css'>
-	    <!-- <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"> -->
+    <title>Management Tools</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <!-- <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"> -->
 
-	    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-	    <link rel="stylesheet" href="css/animate.min.css">
-	    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
-	    <script type="text/ng-template" src="template/header.html"></script>
-	    <script type="text/ng-template" src="template/navigation.html"></script>
-	    <script type="text/ng-template" src="template/footer.html"></script>
-	</head>
+    <script type="text/ng-template" src="template/header.html"></script>
+    <script type="text/ng-template" src="template/navigation.html"></script>
+    <script type="text/ng-template" src="template/footer.html"></script>
+</head>
 
-	<body>
-		<div class="container">
-			<div ng-include="'template/header.html'"></div>
-			<div id="view" ng-view></div>
-			<div ng-include="'template/footer.html'"></div>
-		</div>
+<body ng-controller="GlobalController">
+    <div class="container">
+        <div ng-include="'template/header.html'"></div>
+        <div id="view" ng-view></div>
+        <div ng-include="'template/footer.html'"></div>
+    </div>
 
-		<!-- load script -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/angular.min.js"></script>
-		<script type="text/javascript" src="js/angular-route.min.js"></script>
-		<script type="text/javascript" src="js/angular-animate.min.js"></script>
-		<script type="text/javascript" src="js/angular-sanitize.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+    <!-- load script -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/angular-animate.min.js"></script>
+    <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
 
 </html>

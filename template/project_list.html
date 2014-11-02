@@ -1,38 +1,66 @@
-<div class="view-container">
-	<div class="l-sidebar">
-		<div class="l-content">
-			<div class="filter">
-				<div>Filter</div>
-				<div><img src="#"></div>
-				<div class="drop-down"></div>
-			</div>
-
-			<div class="tagname"></div>
-			<div class="status"></div>
+<div class="l-sidebar">
+	<div class="l-content">
+		<div class="menu">
+			<div class="heading">Filter</div>
+			<ul>
+				<li>Sort By Date</li>
+				<li>Sort By Name</li>
+				<li><input type="text" placeholder="Search..."></input></li>
+			</ul>
 		</div>
-	</div>
-
-	<div class="r-container">
-		<div class="r-content">
-			<div class="title">
-				<ul>
-					<li></li>
-					<li>Name</li>
-					<li>Due Date</li>
-					<li>Status</li>
-					<li><a href="#">Leader</li>
-				</ul>
-			</div>
-
-			<div class="project_list">
-				<ul ng-repeat="project in projects">
-					<li><% project.id %></li>
-					<li><a href="project_name"><% project.name %></a></li>
-					<li><a href="#"><% project.status %></a></li>
-					<li><a href="#"><% project.leader %></a></li>
-				</ul>
-			</div>
+		<div class="menu">
+			<div class="heading">Tag name</div>
+			<ul>
+				<li>#tagname1</li>
+				<li>#tagname1</li>
+			</ul>
+		</div>
+		<div class="menu">
+			<div class="heading">Status</div>
+			<ul>
+				<li>New Project</li>
+				<li>Active Project</li>
+				<li>Finished Project</li>
+				<li>Overdue Project</li>
+			</ul>
 		</div>
 	</div>
 </div>
+
+<div class="r-container">
+	<div class="r-header">
+		<span>Manage Projects</span>
+		<button class="pure-button">Create New</button>
+	</div>
+
+	<div class="r-content">
+		<table class="pure-table">
+		    <thead class="title">
+	        <tr>
+	            <th class="namecol">Project name</th>
+	            <th class="stacol">Status</th>
+	            <th class="leadcol">Leader</th>
+	            <th class="actcol">Actions</th>
+	        </tr>
+		    </thead>
+
+		    <tbody>
+	        <tr ng-repeat="project in projects">
+	            <td class="namecol">
+	            	<a href="project_name"><% project.name %></a>
+	            	<br/>
+	            	<span><% project.description %></span>
+	            </td>      
+	            <td class="stacol"><% project.status %></td>
+	            <td class="leadcol"><% project.leader %></td>
+	            <td class="actcol">
+	            	<a href="#"><i class="fa fa-pencil"></i></a>
+	            	<a href="#"><i class="fa fa-times"></i></a>
+	            </td>
+	        </tr>		        
+		    </tbody>
+		</table>
+	</div>
+</div>
+
 
