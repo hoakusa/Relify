@@ -1,11 +1,14 @@
-<div class="view-container">
+<div class="l-sidebar">
 	<div class="l-content">
 		<div class="menu">
-			<div class="heading">Filter</div>
+			<div class="heading">Project 1</div>
 			<ul>
 				<li>Sort By Date</li>
 				<li>Sort By Name</li>
-				<li><input type="text" placeholder="Search..."></input></li>
+				<li>
+					<span><i class="fa fa-search"></i></span>
+					<input type="text" placeholder="Search ..."></input>
+				</li>
 			</ul>
 		</div>
 		<div class="menu">
@@ -18,32 +21,66 @@
 		<div class="menu">
 			<div class="heading">Status</div>
 			<ul>
-				<li>New Project</li>
-				<li>Active Project</li>
-				<li>Finished Project</li>
-				<li>Overdue Project</li>
+				<li>New Tasks</li>
+				<li>Active Tasks</li>
+				<li>Finished Tasks</li>
+				<li>Overdue Tasks</li>
 			</ul>
 		</div>
 	</div>
-
-	<div class="r-container">
-		<div ng-include="'template/navigation.html'"></div>
-
-		<div class="r-header">
-			<span>Manage Projects</span>
-			<button class="pure-button">Create New</button>
-		</div>
-		
-		<div class="r-content">
-			<div class="create-task">
-				<p>Add new task</p>
-			</div>
-
-			<div class="task_list">
-				<ul ng-repeat="task in tasks">
-				
-				</ul>
-			</div>
-		</div>
-	</div>	
 </div>
+
+<div class="r-container taskpage">
+	<div class="r-header">
+		<button class="pure-button">Create Task</button>
+	</div>
+	<div class="r-content">
+		<table class="pure-table">
+		    <thead class="title">
+	        <tr>
+	            <th class="namecol">Manage Tasks</th>
+	            <th class="stacol">Status</th>
+	            <th class="leadcol">Members</th>
+	            <th class="actcol">Actions</th>
+	        </tr>
+		    </thead>
+
+		    <tbody>
+	        <tr>
+	            <td class="namecol">
+	            	<a href="#">abcdef</a>
+	            	<br/>
+	            	<span>Startdate: 01.01.2015 - Duedate: 01.01.2015</span>
+	            </td>      
+	            <td class="stacol">Active</td>
+	            <td class="leadcol"></td>
+	            <td class="actcol">
+	            	<a href="#"><i class="fa fa-pencil"></i></a>
+	            	<a href="#"><i class="fa fa-times"></i></a>
+	            </td>
+	        </tr>	
+	        <tr>
+	            <td class="namecol">
+	            	<a href="#">abcdef</a>
+	            	<br/>
+	            	<span>Startdate: 01.01.2015 - Duedate: 01.01.2015</span>
+	            </td>      
+	            <td class="stacol">Active</td>
+	            <td class="leadcol">
+	            	<ul>
+	            		<li>MrA</li>
+	            		<li>MrB</li>
+	            		<li>MrC</li>
+	            	</ul>
+	            </td>
+	            <td class="actcol">
+	            	<a href="#"><i class="fa fa-pencil"></i></a>
+	            	<a href="#"><i class="fa fa-times"></i></a>
+	            </td>
+	        </tr>	        
+		    </tbody>
+		</table>
+	</div>
+</div>
+
+

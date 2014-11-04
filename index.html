@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/" />
 
     <title>Management Tools</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -22,17 +23,18 @@
 <body ng-controller="GlobalController">
     <div class="container">
         <div ng-include="'template/header.html'"></div>
+        <div ng-include="'template/navigation.html'"></div>
         <div id="view" ng-view></div>
         <div ng-include="'template/footer.html'"></div>
     </div>
 
     <!-- load script -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/angular-route.min.js"></script>
-    <script type="text/javascript" src="js/angular-animate.min.js"></script>
-    <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.15/angular-route.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.15/angular-sanitize.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.15/angular-animate.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
