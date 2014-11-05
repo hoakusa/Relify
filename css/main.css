@@ -143,7 +143,7 @@ ul {
 
 .l-content {
     padding-top: 52px;
-    color: #fffefe;
+    color: #dfdfdf;
 }
 
 .menu > div, .menu li {
@@ -156,7 +156,7 @@ ul {
 .menu li {
     height: 32px;
     line-height: 32px;
-    font-size: 0.83em;
+    font-size: 0.76em;
 }
 
 /*.menu li i {
@@ -177,12 +177,13 @@ ul {
     line-height: 50px;
     text-transform: uppercase;
     font-size: 0.86em;
+    color: #fffefe;
     background-color: #152737;
     border-left: solid 2px #0fb493;
 }
 
 .menu .heading:hover, .menu li:hover {
-    color: #bdc3c7;
+    color: #aaafb3;
 }
 
 .menu input {
@@ -214,6 +215,7 @@ ul {
 .r-header .pure-button {
     margin-top: 5px;
     float: right;
+    font-size: 0.9em;
 }
 
 .pure-button {
@@ -336,18 +338,25 @@ table i.fa {
 /* main page */
 /*************/
 
+.heading.name {
+    color: #2ecc71;
+}
 
 .menu .text {
     margin-left: 5px;
 }
 
-.mainpage li:hover { color:#fffefe; }
+.mainpage li:hover { color: #dfdfdf; }
+
+.mainpage li,
+div.description { cursor: initial; }
 
 .mainpage .description div {
     padding-top: 10px;
     padding-bottom: 10px;
     display: inline-block;
-    font-size: 0.83em;
+    color: #dfdfdf;
+    font-size: 0.76em;
 }
 
 .description .icon {
@@ -372,6 +381,7 @@ table i.fa {
     display: inline-block;
     margin-right: 5px;
     color: #cecece;
+    cursor: pointer;
 }
 
 .member .icon i:hover {
