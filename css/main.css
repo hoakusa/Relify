@@ -210,10 +210,14 @@ ul {
     font-weight: 700;
 } 
 
-.r-header .pure-button {
+.r-header button {
     margin-top: 5px;
     float: right;
     font-size: 0.9em;
+}
+
+.r-header button a {
+    color: #fffefe;
 }
 
 .pure-button {
@@ -228,8 +232,6 @@ ul {
 }
 
 .r-content {
-/*    position: relative;
-    top: 120px;*/
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 0.86em;
@@ -652,7 +654,8 @@ div.pure-g input:last-child {
 
 .leader { margin-left: 12px;}
 
-}
+
+textarea.note { min-height: 220px;}
 
 
 /* footer */

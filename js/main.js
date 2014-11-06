@@ -109,6 +109,10 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl : 'template/notes.html',
             controller  : 'NotesController'
         })
+        .when('/project_name/create_note', {
+            templateUrl : 'template/create_note.html',
+            controller  : 'NotesController'
+        })
         .when('/project_name/edit', {
             templateUrl : 'template/edit_project.html',
             controller  : 'EditController'
