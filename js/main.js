@@ -4,7 +4,7 @@ var app = angular.module('app', ['ngRoute', 'ngSanitize', 'ngAnimate'], function
     });
 
 app.controller("GlobalController", function($scope, $http) {
-    
+    // $("div.r-container").css("height", $(window).height() - 52);
 });
 
 // header
@@ -41,6 +41,19 @@ app.controller("HomeController", function($scope, $http) {
 // main page
 app.controller("MainController", function($scope, $http) {
     $('#navigation').css("display","block");
+
+    console.log($('div.activity').offset().left);
+    var activity_left =  $('div.activity').offset().left - 262;
+    $('div.activity').css("width", $('.r-content.mainpage').width() - 6 - activity_left);
+    $('div.duedate').css("margin-left", activity_left - $('div.duedate').width()/2);
+    $('div.startdate').css("margin-left", activity_left - $('div.startdate').width()/2);
+    // $('div.activity .event').css("width", $('div.activity').width() - 100);
+
+    $('.activity ul').hover(function() {
+        $(this).find('li.caret i ').toggleClass("hover");
+        $(this).find('.event').toggleClass("hover");
+    });
+
     angular.element($("#navigation")).scope().set_route(0);
 });
 
@@ -103,7 +116,7 @@ $(function() {
 
 // resize
 $(window).resize(function() {
-    $(".content.right").css("width", $(window).width() - 320);
+    $("div.r-container").css("height", $(window).height());
 });
 
 // database

@@ -6,7 +6,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     background-color: #ecf0f1;
-    /*#c9e1c1*/
     margin-top: 52px;
 }
 
@@ -131,6 +130,7 @@ ul {
     margin-top: -52px;
     width: 220px;
     height: 100%;
+    z-index: 99;
 }
 
 .l-sidebar .animated .fadeInLeft {
@@ -149,14 +149,18 @@ ul {
 .menu > div, .menu li {
     display: block;
     padding-left: 32px;
-    padding-right: 24px;
-    cursor: pointer;
+    padding-right: 24px;    
 }
 
 .menu li {
     height: 32px;
     line-height: 32px;
     font-size: 0.76em;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: #aaafb3;
 }
 
 /*.menu li i {
@@ -182,10 +186,6 @@ ul {
     border-left: solid 2px #0fb493;
 }
 
-.menu .heading:hover, .menu li:hover {
-    color: #aaafb3;
-}
-
 .menu input {
     margin-left: 5px;
     width: 86%;
@@ -195,14 +195,12 @@ ul {
     color: #fffefe;
 }
 
-.menu input:focus {
-    color: #fdfdfd;
-}
+.menu input:focus { color: #fdfdfd; }
 
 .r-container {
     padding-top: 24px;
-    padding-left: 252px;
-    padding-right: 32px;
+    padding-left: 262px;
+    padding-right: 42px;
     color: #4a4a4a;
 }
 
@@ -230,8 +228,10 @@ ul {
 }
 
 .r-content {
-    position: relative;
-    top: 24px;
+/*    position: relative;
+    top: 120px;*/
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-size: 0.86em;
 }
 
@@ -295,9 +295,10 @@ table i.fa {
 
 
 #navigation {
-    position: fixed;
+    position: absolute;
     margin-top: 24px;
-    left: 252px;
+    left: 262px;
+    background-color: #ecf0f1;
 }
 
 .nav-tab li {
@@ -338,6 +339,7 @@ table i.fa {
 /* main page */
 /*************/
 
+
 .heading.name {
     color: #2ecc71;
 }
@@ -346,7 +348,7 @@ table i.fa {
     margin-left: 5px;
 }
 
-.mainpage li:hover { color: #dfdfdf; }
+.mainpage li:not(.hover):hover { color: #dfdfdf; }
 
 .mainpage li,
 div.description { cursor: initial; }
@@ -388,30 +390,149 @@ div.description { cursor: initial; }
     color: #0fb493;
 }
 
-.mainpage {
-    top: 120px;
+.r-content.mainpage {
+    padding-top: 102px;
 }
 
-table.activities tbody tr {
-    border: none;
+.duedate, .startdate {
+    display: block;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    color: #4a4a4a;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
-table.activities td {
-    border-left: solid 5px #0f9fb4;
+.duedate {
+    line-height: 60px;
 }
 
-td.eventcol {
-    background-color: rgba(15,159,180, 0.2);
+.startdate {
+    line-height: 30px;
 }
+
+.activity {
+    position: relative;
+    left: 72px;
+    border-left: solid 4px #1d2e3f;
+}
+
+.activity:before, .activity:after {
+    content: "";
+    display: block;
+    margin-left: -8px;
+    width: 11px;
+    height: 11px;
+    background-color: #1d2e3f;
+}
+
+.activity ul {
+    position: relative;
+    top: 32px;
+    left: -3px;
+    margin-bottom: 24px;
+    padding-left: 4px;
+    height: 43px;
+    display: block;
+    border-left: solid 2px #1d2e3f;
+    cursor: pointer;
+    -webkit-transition: all 0.35s ease-out;
+       -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+         -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+}
+
+.activity ul:hover {
+    padding-left: 10px;
+    border-left: solid 3px #0fb493;
+    -webkit-transition: all 0.35s ease-out;
+       -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+         -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+}
+
+.activity ul li {
+    display: inline-block; 
+}
+
+.activity ul li.caret i {
+    font-size: 2em;
+    height: 41px;
+    color: #4a5864;
+    -webkit-transition: all 0.35s ease-out;
+       -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+         -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+}
+
+.activity ul li.caret i.hover {
+    color:  #1a2a37;
+    -webkit-transition: all 0.35s ease-out;
+       -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+         -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+}
+
+.activity .event.hover {
+    background-color: #1a2a37;
+    -webkit-transition: all 0.35s ease-out;
+       -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+         -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+} 
+
+.activity .space {
+    margin-top: 20px;
+    height: 40px;
+}
+
+.activity .event { 
+    margin-left: -6px;
+    padding-top: 3px;
+    padding-left: 32px; 
+    padding-right: 32px;
+    height: 41px;
+    background-color: #4a5864;
+    cursor: pointer;
+    -webkit-transition: all 0.35s ease-out;
+       -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+         -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+}
+
+.activity .time { 
+    color: #eeeeee;
+    font-size: 0.76em; 
+}
+
+.activity .event span, 
+.activity .event span:hover {
+    color: #fffefe;
+    font-size: 0.92em;
+    font-weight: 600;
+}
+
+li.date {
+
+}
+
+li .event {
+
+}
+
+
 
 /*************/
 /* task page */
 /*************/
 
-
-.taskpage .r-content{
-   margin-top: 80px;
-}
 
 .taskpage .pure-table tbody td {
     vertical-align: baseline;
