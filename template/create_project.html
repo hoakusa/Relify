@@ -1,0 +1,61 @@
+<div class="l-sidebar">
+	<div class="l-content">
+		<div class="menu">
+			<div class="heading">Filter</div>
+			<ul>
+				<li>Sort By Date</li>
+				<li>Sort By Name</li>
+				<li>
+					<span><i class="fa fa-search"></i></span>
+					<input type="text" placeholder="Search ..."></input>
+				</li>
+			</ul>
+		</div>
+		<div class="menu">
+			<div class="heading">Tag name</div>
+			<ul>
+				<li>#tagname1</li>
+				<li>#tagname1</li>
+			</ul>
+		</div>
+		<div class="menu">
+			<div class="heading">Status</div>
+			<ul>
+				<li>New Project</li>
+				<li>Active Project</li>
+				<li>Finished Project</li>
+				<li>Overdue Project</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="r-container">
+<div class="r-header">
+		<span>Create New Project</span>
+	</div>
+<div class="r-content">
+	<div class="create edit">
+		<h4 id="message">New Project</h4>
+		<form class="pure-form pure-g" ng-submit="save()">
+			<div class="pure-u-1 pure-g">
+				<input class="name pure-u-19-24" type="text" placeholder="Project name">
+				<input class="code pure-u-1-5" type="text" placeholder="Barcode">
+			</div><div class="pure-g pure-u-1">
+				<select class="status pure-u-1-6">
+					<option value="0">New</option>
+					<option value="1">Active</option>
+					<option value="2">Finished</option>
+					<option value="3">Overdue</option>
+				</select>
+				<input class="leader pure-u-2-5" type="text" placeholder="Leader">
+				<input class="create pure-u-2-5" type="text">
+			</div><div class="pure-g pure-u-1">
+				<textarea class="description pure-u-1"></textarea>
+			</div>
+			<button type="submit" class="pure-button pure-button-primary task">Save change</button>
+		</form>
+	</div>
+</div>
+</div>
+

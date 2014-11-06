@@ -5,32 +5,32 @@
 			<ul>
 				<li>
 					<span class="icon"><i class="fa fa-barcode"></i></span>
-					<span class="text"></span>
+					<span class="text">MHK01</span>
 				</li>
 				<li>
 					<span class="icon"><i class="fa fa-tags"></i></span>
-					<span class="text"></span>
+					<span class="text">Active</span>
 				</li>
 				<li>
 					<span class="icon"><i class="fa fa-user"></i></span>
-					<span class="text"></span>
+					<span class="text">Mr.A</span>
 				</li>
 				<li>
 					<span class="icon"><i class="fa fa-clock-o"></i></span>
-					<span class="text">Create at</span>
+					<span class="text">Create at 10.11.1014</span>
 				</li>
 			</ul>
 			<div class="description">
 				<div class="icon"><i class="fa fa-pencil-square-o"></i></div>
-				<div class="text"></div>
+				<div class="text">A virtual doctor service where people can evaluate their symptoms with guidance and get further instruction.</div>
 			</div>
 		</div>
 		<div class="menu">
 			<div class="heading">Members list</div>
 			<ul class="member">
-				<li>
+				<li class="hover">
 					<span><i class="fa fa-plus"></i></span>
-					<input type="text" placeholder="Add new member"></input>
+					<input type="text" placeholder="Add new member ..."></input>
 				</li>
 				<li>
 					<span class="text">Member </span>
@@ -59,25 +59,28 @@
 </div>
 
 <div class="r-container">
-	<div class="r-content mainpage">
-		<table class="pure-table activities">
-		    <tbody>
-	        <tr class="duadate">
-	        	<td class="stacol">01.01.2015</td>
-	            <td class="eventcol">Duedate</td>        
-	        </tr>
-	        <tr>
-	        	<td class="stacol">01.01.2015</td>
-	            <td class="eventcol">
-	            <a href="#">abcxyz</a>
-	            </td>        
-	        </tr>
-	        <tr class="startdate">
-	        	<td class="stacol">01.01.2015</td>
-	            <td class="eventcol">Startdate</td>        
-	        </tr>		        
-		    </tbody>
-		</table>
+<div class="r-content mainpage">
+	<div class="create edit">
+		<h4 id="message">Current Project</h4>
+		<form class="pure-form pure-g" ng-submit="save()">
+			<div class="pure-u-1 pure-g">
+				<input class="name pure-u-19-24" type="text">
+				<input class="code pure-u-1-5" type="text">
+			</div><div class="pure-g pure-u-1">
+				<select class="status pure-u-1-6">
+					<option value="0">New</option>
+					<option value="1">Active</option>
+					<option value="2">Finished</option>
+					<option value="3">Overdue</option>
+				</select>
+				<input class="leader pure-u-2-5" type="text">
+				<input class="create pure-u-2-5" type="text">
+			</div><div class="pure-g pure-u-1">
+				<textarea class="description pure-u-1"></textarea>
+			</div>
+			<button type="submit" class="pure-button pure-button-primary task">Save change</button>
+		</form>
 	</div>
-</div>	
+</div>
+</div>
 

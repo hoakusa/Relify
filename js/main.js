@@ -36,6 +36,9 @@ app.controller("HomeController", function($scope, $http) {
     $scope.projects = allProject;
     $('.l-sidebar').addClass("animated fadeInLeft");
     $('#navigation').css("display","none");
+    $scope.save = function() {
+        $('#message').text("Successfully created new project");
+    };
 });
 
 // main page
@@ -60,6 +63,11 @@ app.controller("MainController", function($scope, $http) {
 // tasks page
 app.controller("TasksController", function($scope, $http) {
     $('#navigation').css("display","block");
+    $('.taskbar').on("click", function() {
+        $(this).find('.subinfo').slideToggle("slow");
+        return false;
+    });
+
     angular.element($("#navigation")).scope().set_route(1);
 });
 
@@ -71,8 +79,13 @@ app.controller("NotesController", function($scope, $http) {
 
 // notes page
 app.controller("EditController", function($scope, $http) {
-   $('#navigation').css("display","block"); 
-   angular.element($("#navigation")).scope().set_route(3);
+    $('#navigation').css("display","block"); 
+
+    $scope.save = function() {
+        $('#message').text("Successfully edited information");
+    };
+
+    angular.element($("#navigation")).scope().set_route(3);
 });
 
 // route setting
@@ -99,6 +112,10 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/project_name/edit', {
             templateUrl : 'template/edit_project.html',
             controller  : 'EditController'
+        })
+        .when('/create_new', {
+            templateUrl : 'template/create_project.html',
+            controller  : 'HomeController'
         })
         
         // redirect if route not found
