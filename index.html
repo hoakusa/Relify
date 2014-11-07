@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/main.css">
     
 
@@ -26,6 +27,11 @@
         <div ng-include="'template/header.html'"></div>
         <div ng-include="'template/navigation.html'"></div>
         <div id="view" ng-view></div>
+        <div class="overlay-ajax">
+            <div class="ajax-loading">
+                <div class="ajax-text">Please wait ... </div>
+            </div>
+        </div>
         <!-- <div ng-include="'template/footer.html'"></div>
  -->    </div>
 
@@ -35,6 +41,7 @@
     <script src="http://code.angularjs.org/1.2.15/angular-route.min.js"></script>
     <script src="http://code.angularjs.org/1.2.15/angular-sanitize.min.js"></script>
     <script src="http://code.angularjs.org/1.2.15/angular-animate.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
 
 </html>

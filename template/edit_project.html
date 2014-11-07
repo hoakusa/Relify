@@ -1,7 +1,7 @@
 <div class="l-sidebar">
 	<div class="l-content mainpage">
 		<div class="menu">
-			<div class="heading name">Virtual Doctor</div>
+			<div class="heading name"><div>Virtual Doctor</div></div>
 			<ul>
 				<li>
 					<span class="icon"><i class="fa fa-barcode"></i></span>
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="menu">
-			<div class="heading">Members list</div>
+			<div class="heading"><div>Members list</div></div>
 			<ul class="member">
 				<li class="hover">
 					<span><i class="fa fa-plus"></i></span>
@@ -64,8 +64,8 @@
 		<h4 id="message">Current Project</h4>
 		<form class="pure-form pure-g" ng-submit="save()">
 			<div class="pure-u-1 pure-g">
-				<input class="name pure-u-19-24" type="text">
-				<input class="code pure-u-1-5" type="text">
+				<input class="name pure-u-19-24" type="text" ng-model="project.name">
+				<input class="code pure-u-1-5" type="text" ng-model="project.code">
 			</div><div class="pure-g pure-u-1">
 				<select class="status pure-u-1-5">
 					<option value="0">New</option>
@@ -73,9 +73,9 @@
 					<option value="2">Finished</option>
 					<option value="3">Overdue</option>
 				</select>
-				<input class="leader pure-u-19-24" type="text" placeholder="Leader">
+				<input class="leader pure-u-19-24" type="text" placeholder="Leader"  ng-model="project.leader">
 			</div><div class="pure-g pure-u-1">
-				<textarea class="description pure-u-1" placeholder="Description"></textarea>
+				<textarea class="description pure-u-1" placeholder="Description"  ng-model="project.description"></textarea>
 			</div>
 			<button type="submit" class="pure-button pure-button-primary task">Save change</button>
 		</form>

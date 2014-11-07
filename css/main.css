@@ -46,16 +46,61 @@ ul {
 }
 
 .animated {
-    -webkit-transition-duration: 0.7s;
-       -moz-transition-duration: 0.7s;
-        -ms-transition-duration: 0.7s;
-         -o-transition-duration: 0.7s;
-            transition-duration: 0.7s;
+    -webkit-animation-duration: 0.7s;
+       -moz-animation-duration: 0.7s;
+        -ms-animation-duration: 0.7s;
+         -o-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+}
+
+.l-content .menu .animated {
+    -webkit-animation-duration: 0.35s;
+       -moz-animation-duration: 0.35s;
+        -ms-animation-duration: 0.35s;
+         -o-animation-duration: 0.35s;
+            animation-duration: 0.35s;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
+}
+
+.overlay-ajax {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 1000000;
+    width: 100%;
+    height: 100%;
+}
+
+.ajax-loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1000001;
+}
+
+.ajax-text {
+    width: 200px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0;
+    background-color: #16a085;
+    color: #ffffff;
+    z-index: 1000002;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
 }
 
 
@@ -145,6 +190,10 @@ ul {
     padding-top: 52px;
     color: #dfdfdf;
 }
+
+/*.table2 {
+    display: none;
+}*/
 
 .menu > div, .menu li {
     display: block;
@@ -301,6 +350,7 @@ table i.fa {
     margin-top: 24px;
     left: 262px;
     background-color: #ecf0f1;
+    display: none;
 }
 
 .nav-tab li {
@@ -437,7 +487,7 @@ div.description { cursor: initial; }
     padding-left: 4px;
     height: 43px;
     display: block;
-    border-left: solid 2px #1d2e3f;
+    /*border-left: solid 2px #1d2e3f;*/
     cursor: pointer;
     -webkit-transition: all 0.35s ease-out;
        -moz-transition: all 0.35s ease-out;
@@ -447,7 +497,7 @@ div.description { cursor: initial; }
 }
 
 .activity ul:hover {
-    padding-left: 10px;
+    padding-left: 12px;
     border-left: solid 3px #0fb493;
     -webkit-transition: all 0.35s ease-out;
        -moz-transition: all 0.35s ease-out;
@@ -619,6 +669,17 @@ div.subcontent {
     display: none;
     padding: 0 14px;
     border: solid 1px #bdc3c7;
+}
+
+.object {
+    display: block;
+    background-color: #152737;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tasklist .taskname.dropped {
+    background-color: #1d2e3f;
 }
 
 /*************/

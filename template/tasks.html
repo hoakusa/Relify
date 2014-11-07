@@ -1,7 +1,7 @@
 <div class="l-sidebar">
 	<div class="l-content">
 		<div class="menu">
-			<div class="heading name">Virtual Doctor</div>
+			<div class="heading name"><div>Virtual Doctor</div></div>
 			<ul>
 				<li>#tagname1</li>
 				<li>#tagname1</li>
@@ -9,7 +9,7 @@
 		</div>
 
 		<div class="menu">
-			<div class="heading">Status</div>
+			<div class="heading"><div>Status</div></div>
 			<ul>
 				<li>New Tasks</li>
 				<li>Active Tasks</li>
@@ -19,28 +19,28 @@
 		</div>
 
 		<div class="menu">
-			<div class="heading">Members list</div>
+			<div class="heading"><div>Members list</div></div>
 			<ul class="member">
 				<li>
 					<span><i class="fa fa-plus"></i></span>
 					<input type="text" placeholder="Add new member ..."></input>
 				</li>
 				<li>
-					<span class="text task">Member </span>
+					<span class="text task">Ahri Riot </span>
 					<span class="icon">
 						<i class="fa fa-pencil"></i></i>
 						<i class="fa fa-times"></i></i>
 					</span>
 				</li>
 				<li>
-					<span class="text task">Member 1</span>
+					<span class="text task">Kassadin Joes</span>
 					<span class="icon">
 						<i class="fa fa-pencil"></i></i>
 						<i class="fa fa-times"></i></i>
 					</span>
 				</li>
 				<li>
-					<span class="text task">Member 1</span>
+					<span class="text task">Janna Ashe</span>
 					<span class="icon">
 						<i class="fa fa-pencil"></i></i>
 						<i class="fa fa-times"></i></i>
@@ -61,7 +61,7 @@
 				<input class="pure-input-1-2" type="text" placeholder="Start date">
 				<input class="pure-input-1-2" type="text" placeholder="Due date">
 			</div>
-			<button type="submit" class="task pure-button pure-button-primary pure-u-1-12">Save</button>
+			<button type="submit" class="task pure-button pure-button-primary pure-u-1-12" ng-click="save()">Save</button>
 		</form>
 	</div>
 
@@ -76,22 +76,34 @@
 			</div>
 			<div class="subinfo">
 				<p>Startdate 01.02.2014 - Duedate 01.03.2014</p>
+				<p id="member">Members - MrA - MrB</p>
+			</div>
+		</div>
+		<div class="taskbar">
+			<div class="taskname">
+				<span class="text">Create template </span>
+				<span class="icon">
+					<i class="fa fa-pencil"></i></i>
+					<i class="fa fa-times"></i></i>
+				</span>
+			</div>
+			<div class="subinfo">
+				<p>Startdate 01.02.2014 - Duedate 01.03.2014</p>
 				<p>Members - MrA - MrB</p>
 			</div>
 		</div>
-		<div class="taskname">
-			<span class="text">Create template </span>
-			<span class="icon">
-				<i class="fa fa-pencil"></i></i>
-				<i class="fa fa-times"></i></i>
-			</span>
-		</div>
-		<div class="taskname">
-			<span class="text">Create template 123</span>
-			<span class="icon">
-				<i class="fa fa-pencil"></i></i>
-				<i class="fa fa-times"></i></i>
-			</span>
+		<div class="taskbar">
+			<div class="taskname">
+				<span class="text">Create template </span>
+				<span class="icon">
+					<i class="fa fa-pencil"></i></i>
+					<i class="fa fa-times"></i></i>
+				</span>
+			</div>
+			<div class="subinfo">
+				<p>Startdate 01.02.2014 - Duedate 01.03.2014</p>
+				<p>Members - MrA - MrB</p>
+			</div>
 		</div>
 	</ul>
 	</div>

@@ -1,7 +1,7 @@
 <div class="l-sidebar">
 	<div class="l-content mainpage">
 		<div class="menu">
-			<div class="heading name">Virtual Doctor</div>
+			<div class="heading name"><div>Virtual Doctor</div></div>
 			<ul>
 				<li>
 					<span class="icon"><i class="fa fa-barcode"></i></span>
@@ -13,7 +13,7 @@
 				</li>
 				<li>
 					<span class="icon"><i class="fa fa-user"></i></span>
-					<span class="text">Mr.A</span>
+					<span class="text">Morgana Riot</span>
 				</li>
 				<li>
 					<span class="icon"><i class="fa fa-clock-o"></i></span>
@@ -26,33 +26,37 @@
 			</div>
 		</div>
 		<div class="menu">
-			<div class="heading">Members list</div>
+			<div class="heading"><div>Members list</div></div>
 			<ul class="member">
 				<li class="hover">
+				<form ng-submit="add()">
 					<span><i class="fa fa-plus"></i></span>
-					<input type="text" placeholder="Add new member ..."></input>
+					<input type="text" placeholder="Add new member ..." ng-model="newmember"></input>
+				</form>
 				</li>
+				<div class="movedown">
 				<li>
-					<span class="text">Member </span>
+					<span class="text">Ahri Riot </span>
 					<span class="icon">
 						<i class="fa fa-pencil"></i></i>
 						<i class="fa fa-times"></i></i>
 					</span>
 				</li>
 				<li>
-					<span class="text">Member 1</span>
+					<span class="text">Kassadin Joes</span>
 					<span class="icon">
 						<i class="fa fa-pencil"></i></i>
 						<i class="fa fa-times"></i></i>
 					</span>
 				</li>
 				<li>
-					<span class="text">Member 1</span>
+					<span class="text">Janna Ashe</span>
 					<span class="icon">
 						<i class="fa fa-pencil"></i></i>
 						<i class="fa fa-times"></i></i>
 					</span>
 				</li>
+				</div>
 			</ul>
 		</div>
 	</div>
@@ -65,7 +69,7 @@
 			<ul>
 				<li class="caret"><i class="fa fa-caret-left"></i></li>
 				<li class="event">
-					<span>Member A finished navigation bar</span>
+					<span>Morgana finished navigation bar</span>
 					<div class="time"><i class="fa fa-clock-o"></i>
 					10 Oct 2014 at 5:00pm
 					</div>
@@ -74,7 +78,7 @@
 			<ul>
 				<li class="caret"><i class="fa fa-caret-left"></i></li>
 				<li class="event">
-					<span>Member A added a note "PHP document"</span>
+					<span>You added a note "PHP document"</span>
 					<div class="time"><i class="fa fa-clock-o"></i>
 					10 Oct 2014 at 5:00pm
 					</div>
@@ -83,7 +87,7 @@
 			<ul>
 				<li class="caret"><i class="fa fa-caret-left"></i></li>
 				<li class="event">
-					<span>Member A was removed from prjoject</span>
+					<span>Lux was removed from prjoject</span>
 					<div class="time"><i class="fa fa-clock-o"></i>
 					10 Oct 2014 at 5:00pm
 					</div>
