@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
+    <title>Relyfin: The First Reliable Finance Advice Service in Vietnam</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Relyfin - Lời khuyên tài chính đáng tin cậy nhất. Trung tâm tư vấn tài chính #1 đưa ra những lời khuyên tốt nhất và an toàn cho các quyết định tài chính của bạn.">
     <base href="/" />
 
-    <title>Management Tools</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <!-- load font -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <!-- <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"> -->
 
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <!-- load css -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/main.css">
-    
 
-    <script type="text/ng-template" src="template/header.html"></script>
-    <script type="text/ng-template" src="template/navigation.html"></script>
+    <!-- load template -->
+    <script type="text/ng-template" src="template/navbar.html"></script>
     <script type="text/ng-template" src="template/footer.html"></script>
 </head>
 
-<body ng-controller="GlobalController">
-    <div class="container">
-        <div ng-include="'template/header.html'"></div>
-        <div ng-include="'template/navigation.html'"></div>
-        <div id="view" ng-view></div>
-        <div class="overlay-ajax">
-            <div class="ajax-loading">
-                <div class="ajax-text">Please wait ... </div>
-            </div>
-        </div>
-        <!-- <div ng-include="'template/footer.html'"></div>
- -->    </div>
+<body ng-controller="AppController">
+    <div ng-include="'template/navbar.html'"></div>
+    <div id="view" ng-view></div>
+    <div ng-include="'template/footer.html'"></div>
 
     <!-- load script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-    <script src="http://code.angularjs.org/1.2.15/angular-route.min.js"></script>
-    <script src="http://code.angularjs.org/1.2.15/angular-sanitize.min.js"></script>
-    <script src="http://code.angularjs.org/1.2.15/angular-animate.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.16/angular-route.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.16/angular-sanitize.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+
     <script src="js/main.js"></script>
+</body>
 
 </html>

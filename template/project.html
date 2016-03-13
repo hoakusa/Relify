@@ -1,110 +1,386 @@
-<div class="l-sidebar">
-	<div class="l-content mainpage">
-		<div class="menu">
-			<div class="heading name"><div>Virtual Doctor</div></div>
-			<ul>
-				<li>
-					<span class="icon"><i class="fa fa-barcode"></i></span>
-					<span class="text">MHK01</span>
-				</li>
-				<li>
-					<span class="icon"><i class="fa fa-tags"></i></span>
-					<span class="text">Active</span>
-				</li>
-				<li>
-					<span class="icon"><i class="fa fa-user"></i></span>
-					<span class="text">Morgana Riot</span>
-				</li>
-				<li>
-					<span class="icon"><i class="fa fa-clock-o"></i></span>
-					<span class="text">Create at 10.11.1014</span>
-				</li>
-			</ul>
-			<div class="description">
-				<div class="icon"><i class="fa fa-pencil-square-o"></i></div>
-				<div class="text">A virtual doctor service where people can evaluate their symptoms with guidance and get further instruction.</div>
-			</div>
-		</div>
-		<div class="menu">
-			<div class="heading"><div>Members list</div></div>
-			<ul class="member">
-				<li class="hover">
-				<form ng-submit="add()">
-					<span><i class="fa fa-plus"></i></span>
-					<input type="text" placeholder="Add new member ..." ng-model="newmember"></input>
-				</form>
-				</li>
-				<div class="movedown">
-				<li>
-					<span class="text">Ahri Riot </span>
-					<span class="icon">
-						<i class="fa fa-pencil"></i></i>
-						<i class="fa fa-times"></i></i>
-					</span>
-				</li>
-				<li>
-					<span class="text">Kassadin Joes</span>
-					<span class="icon">
-						<i class="fa fa-pencil"></i></i>
-						<i class="fa fa-times"></i></i>
-					</span>
-				</li>
-				<li>
-					<span class="text">Janna Ashe</span>
-					<span class="icon">
-						<i class="fa fa-pencil"></i></i>
-						<i class="fa fa-times"></i></i>
-					</span>
-				</li>
-				</div>
-			</ul>
-		</div>
-	</div>
+<div class="animated fadeIn container project">
+    <div class="page-header">
+        <h1 class="animated zoomIn">Young Thinkers and Doers</h1>
+        <h5 class="animated fadeInLeft">An innovation platform is aimed at young people</h5>
+    </div>
+
+    <div class="page-content">
+        <div class="row">
+
+            <!-- left-sidebar -->
+            <div class="col-md-4 col-sm-4">
+                <img src="img/project-img.jpg" class="img-responsive" id="project-img">
+
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a data-target="#overview" data-toggle="pill"><span class="glyphicon glyphicon-file"></span><span class="text">Project details</span></a></li>
+                    <li><a data-target="#activity" data-toggle="pill"><span class="glyphicon glyphicon-list-alt"></span><span class="text">To do list</span></a></li>
+                    <li><a data-target="#gallery" data-toggle="pill"><span class="glyphicon glyphicon-picture"></span><span class="text">Gallery</span></a></li>
+                    <li><a data-target="#edit" data-toggle="pill"><span class="glyphicon glyphicon-edit"></span><span class="text">Edit project</span></a></li>
+                </ul>
+
+                <!-- <div class="completed-level">
+                    <img src="img/completed-level.jpg" class="img-responsive">
+                </div> -->
+
+                <div id="myStat" class="completed-level" data-dimension="250" data-text="35%" data-info="Completed" data-width="30" data-fontsize="38" data-percent="35" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd" data-total="200" data-part="35" data-icon="long-arrow-up" data-icon-size="28" data-icon-color="#fff"></div>
+
+                <ul class="list-inline social-media">
+                    <li><a href=""><img src="img/facebook.png"></a></li>
+                    <li><a href=""><img src="img/twitter.png"></a></li>
+<!--                     <li><a href=""><img src="img/pinterest.png"></a></li> -->
+                    <li><a href=""><img src="img/youtube.png"></a></li>
+                    <li><a href=""><img src="img/instagram.png"></a></li>
+                </ul>
+            </div>
+            <!-- end left-side-bar -->
+
+            <!-- right-content -->
+            <div class="col-md-8 col-sm-8">
+                <div class="tab-content">
+
+                <!-- overview section -->
+                    <section id="overview" class="overview tab-pane fade in active">
+
+                        <dl class="dl-horizontal">
+                            <dt>Team</dt>
+                            <dd>Young Thinkers & Doers</dd>
+
+                            <dt>Team members</dt>
+                            <dd>Siina Hietajärvi</dd>
+                            <dd>Miia Matinolli </dd>
+                            <dd>Subash Basnet</dd>
+
+                            <dt>Support type</dt>
+                            <dd>Business Support</dd>
+
+                            <dt>Organization</dt>
+                            <dd>Flatbread-Leader</dd>
+
+                            <dt>Municipality</dt>
+                            <dd>Tyrnävä</dd>
+
+                            <dt>Duration</dt>
+                            <dd>May 2013 - May 2014</dd>
+
+                            <dt>Funding</dt>
+                            <dd>500 €</dd>
+
+                            <dt>Total budget</dt>
+                            <dd>500 €</dd>
+
+                            <dt>Description</dt>
+                            <dd>Building an innovation platform for the Youth Leader program which is aimed at young people aged 13-20 who live in Hailuoto, Liminka, Tyrnävä, Lumijoki, Siikajoki, Raahe and Pyhäjok.</dd>
+                        </dl>
+                        <dl>
+                            <dt>Final picture</dt>
+                            <dd class="picture">
+                                <img src="img/project-img.jpg" class="img-responsive">
+                            </dd>
+
+                            <dt>Final video</dt>
+                            <dd class="picture">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Mn6FoBJTciU"></iframe>
+                                </div>
+                            </dd>
+                        </dl>
+
+                        <div class="panel panel-default comments">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Comments</h3>
+                            </div>
+
+                            <div class="panel-body">
+
+                                <div class="media">
+                                    <div class="media-left">
+                                        <div class="crop-48">
+                                            <a href="#">
+                                            <img class="media-object comment-avatar" src="img/avatar.jpg" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media-body">
+                                        <h4 class="media-heading">An Pham <small><abbr title="8:35am" data-livestamp="1431279576"></abbr></small></h4>
+                                        <p>Hello, this is the first comment</p>
+                                    </div>
+                                </div>
+
+                                <div class="media">
+                                    <div class="media-left">
+                                        <div class="crop-48">
+                                            <a href="#">
+                                            <img class="media-object comment-avatar" src="img/avatar.jpg" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Siina Hietajärvi <small><abbr title="8:35am" data-livestamp="1431279576"></abbr></small></h4>
+                                        <p>Thank you!</p>
+                                    </div>
+                                </div>
+
+                                <div class="media">
+                                    <div class="media-left">
+                                        <div class="crop-48">
+                                            <a href="#">
+                                            <img class="media-object" src="img/avatar.jpg" alt="...">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media-body">
+                                        <div class="height-48">
+                                        <input type="text" class="form-control" id="comment-enter" placeholder="Write a comment...">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section> <!-- end overview -->
+
+                    <!-- milestone -->
+                    <section id="activity" class="tab-pane fade activities">
+
+                        <ul class="row description">
+                            <li class="col-md-4 col-sm-4 newtask"><span class="glyphicon glyphicon-plus"></span> New task</li>
+                            <li class="col-md-4 col-sm-4 opentask"><span class="glyphicon glyphicon-ok"></span> Open task</li>
+                            <li class="col-md-4 col-sm-4 closetask"><span class="glyphicon glyphicon-remove"></span> Close task</li>
+                        </ul>
+
+                        <form>
+                            <div class="form-group input-group">
+                                <div class="input-group-addon" class='datetimepicker' data-date-format="YYYY-MM-DD" style="cursor: pointer;"><span class="glyphicon glyphicon-calendar"></span></div>
+                                <input type="text" placeholder="Add new task" class="form-control addtask" />
+                            </div>
+                        </form>
+
+                        <div class="activity dropdown task5">
+                            <div data-toggle="dropdown" class="bs-callout bs-callout-default">
+                                <h4>Monday, 11th May 2014</h4>
+                                <p>Switch to period 2</p>
+                                <a data-target="#select-box"></a>
+                            </div>
+
+                            <ul id="select-box" class="row dropdown-menu transition">
+                                <li class="col-md-6 col-sm-6 col-xs-6 opentask" ng-click="opentask('task5')"><span class="glyphicon glyphicon-ok"></span> Open task</li>
+                                <li class="col-md-6 col-sm-6 col-xs-6 closetask" ng-click="closetask('task5')"><span class="glyphicon glyphicon-remove"></span> Close task</li>
+                            </ul>
+                        </div>
+
+                        <div class="activity dropdown task3">
+                            <div data-toggle="dropdown" class="bs-callout bs-callout-default">
+                                <h4>Friday, 6th May 2014</h4>
+                                <p>Finish the prototype</p>
+                                <a data-target="#select-box"></a>
+                            </div>
+
+                            <ul id="select-box" class="row dropdown-menu transition">
+                                <li class="col-md-6 col-sm-6 col-xs-6 opentask" ng-click="opentask('task3')"><span class="glyphicon glyphicon-ok"></span> Open task</li>
+                                <li class="col-md-6 col-sm-6 col-xs-6 closetask" ng-click="closetask('task3')"><span class="glyphicon glyphicon-remove"></span> Close task</li>
+                            </ul>
+                        </div>
+
+                        <div class="activity dropdown task2">
+                            <div data-toggle="dropdown" class="bs-callout bs-callout-primary">
+                                <h4>Tuesday, 11th April 2014</h4>
+                                <p>Design the process and the layout for our product</p>
+                                <a data-target="#select-box"></a>
+                            </div>
+
+                            <ul id="select-box" class="row dropdown-menu transition">
+                                <li class="col-md-6 col-sm-6 col-xs-6 opentask" ng-click="opentask('task2')"><span class="glyphicon glyphicon-ok"></span> Open task</li>
+                                <li class="col-md-6 col-sm-6 col-xs-6 closetask" ng-click="closetask('task2')"><span class="glyphicon glyphicon-remove"></span> Close task</li>
+                            </ul>
+                        </div>
+
+                        <div class="activity dropdown task1">
+                            <div data-toggle="dropdown" class="bs-callout bs-callout-danger">
+                                <h4>Monday, 11th Oct 2013</h4>
+                                <p>Start make a prototype</p>
+                                <a data-target="#select-box"></a>
+                            </div>
+
+                            <ul id="select-box" class="row dropdown-menu transition">
+                                <li class="col-md-6 col-sm-6 col-xs-6 opentask" ng-click="opentask('task1')"><span class="glyphicon glyphicon-ok"></span> Open task</li>
+                                <li class="col-md-6 col-sm-6 col-xs-6 closetask" ng-click="closetask('task1')"><span class="glyphicon glyphicon-remove"></span> Close task</li>
+                            </ul>
+                        </div>
+
+                        <div class="activity dropdown task0">
+                            <div data-toggle="dropdown" class="bs-callout bs-callout-danger">
+                                <h4>Monday, 25th May 2013</h4>
+                                <p>Write project plan and summit it to our channel</p>
+                                <a data-target="#select-box"></a>
+                            </div>
+
+                            <ul id="select-box" class="row dropdown-menu transition">
+                                <li class="col-md-6 col-sm-6 col-xs-6 opentask" ng-click="opentask('task0')"><span class="glyphicon glyphicon-ok"></span> Open task</li>
+                                <li class="col-md-6 col-sm-6 col-xs-6 closetask" ng-click="closetask('task0')"><span class="glyphicon glyphicon-remove"></span> Close task</li>
+                            </ul>
+                        </div>
+
+                    </section><!-- end milestone -->
+
+                    <!-- gallery -->
+                    <section id="gallery" class="tab-pane fade">
+                        <div class="row gallery">
+
+                            <div class="col-md-4 col-sm-6">
+                                <img src="img/picture1.jpg" class="img-responsive">
+                                <img src="img/picture2.jpg" class="img-responsive">
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <img src="img/picture3.jpg" class="img-responsive">
+                                <img src="img/picture4.jpg" class="img-responsive">
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <img src="img/picture5.jpg" class="img-responsive">
+                                <img src="img/picture6.jpg" class="img-responsive">
+                            </div>
+
+                        </div>
+                    </section><!-- gallery -->
+
+                    <!-- modify project -->
+                    <section id="edit" class="tab-pane fade">
+                        <div class="edit-project">
+                            <form>
+                                <div class="form-group">
+                                    <label for="project">PROJECT </label>
+                                    <input type="text" class="form-control" name="project" value="Young Thinkers and Doers">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="team">Team</label>
+                                    <input type="text" class="form-control" name="team" value="Young Thinkers & Doers">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="team">Team members</label>
+                                    <input type="text" class="form-control" name="team" placeholder="Add new members">
+                                </div>
+
+                                <ul class="members">
+                                    <li><span class="glyphicon glyphicon-user"></span> Siina Hietajärvi</li>
+                                    <li><span class="glyphicon glyphicon-user"></span> Miia Matinolli </li>
+                                    <li><span class="glyphicon glyphicon-user"></span> Subash Basnet</li>
+                                </ul>
+
+                                <label for="support-type">Support type</label>
+                                <div class="radio">
+                                    <label><input type="radio" name="optionsRadios" id="business" value="option1" checked> Business support</label>
+                                </div>
+
+                                <div class="radio">
+                                    <label><input type="radio" name="optionsRadios" id="nonebusiness" value="option2">None-profit support
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="team">Organization</label>
+                                    <input type="text" class="form-control" name="team" value="Flatbread-Leader">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="team">Municipality</label>
+                                    <select class="form-control">
+                                        <option>Alavieska</option>
+                                        <option>Hailuoto</option>
+                                        <option>Spur</option>
+                                        <option>Kuusamo</option>
+                                        <option>Oulainen</option>
+                                        <option>Oulu</option>
+                                        <option>Posio</option>
+                                        <option>Raahe</option>
+                                        <option>Sievi</option>
+                                        <option selected>Tyrnävä</option>
+                                        <option>Yli-li</option>
+                                        <option>Ylivieska</option>
+                                    </select>
+                                </div>
+
+                                <label>Duration</label>
+                                <div class="form-group input-group">
+                                    <div class="input-group-addon" class='datetimepicker' data-date-format="YYYY-MM-DD" style="cursor: pointer;"><span class="glyphicon glyphicon-calendar"></span></div>
+                                    <input type="text" value="May 2013" class="form-control" />
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-addon" class='datetimepicker' data-date-format="YYYY-MM-DD" style="cursor: pointer;"><span class="glyphicon glyphicon-calendar"></span></div>
+                                    <input type="text" value="May 2014" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Funding</label>
+                                    <input type="text" value="500 €" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Total budget</label>
+                                    <input type="text" value="500 €" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="project">Description </label>
+                                    <textarea class="form-control" >Building an innovation platform for the Youth Leader program which is aimed at young people aged 13-20 who live in Hailuoto, Liminka, Tyrnävä, Lumijoki, Siikajoki, Raahe and Pyhäjok.</textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Final picture</label>
+                                    <input type="file" id="exampleInputFile">
+                                    <div class="picture">
+                                        <img src="img/project-img.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Final video</label>
+                                    <input type="file" id="exampleInputFile">
+                                    <div class="video">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Mn6FoBJTciU"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="/project"><button type="submit" class="btn btn-default">Submit</button></a>
+                            </form>
+                        </div>
+                    </section><!-- end modify -->
+
+                </div>
+            </div>
+            <!-- end right-content -->
+
+        </div>
+    </div>
+
 </div>
 
-<div class="r-container">
-	<div class="r-content mainpage">
-		<div class="duedate">10 Nov 2014</div>
-		<div class="activity">
-			<ul>
-				<li class="caret"><i class="fa fa-caret-left"></i></li>
-				<li class="event">
-					<span>Morgana finished navigation bar</span>
-					<div class="time"><i class="fa fa-clock-o"></i>
-					10 Oct 2014 at 5:00pm
-					</div>
-				</li>				
-			</ul>
-			<ul>
-				<li class="caret"><i class="fa fa-caret-left"></i></li>
-				<li class="event">
-					<span>You added a note "PHP document"</span>
-					<div class="time"><i class="fa fa-clock-o"></i>
-					10 Oct 2014 at 5:00pm
-					</div>
-				</li>				
-			</ul>
-			<ul>
-				<li class="caret"><i class="fa fa-caret-left"></i></li>
-				<li class="event">
-					<span>Lux was removed from prjoject</span>
-					<div class="time"><i class="fa fa-clock-o"></i>
-					10 Oct 2014 at 5:00pm
-					</div>
-				</li>				
-			</ul>
-			<ul>
-				<li class="caret"><i class="fa fa-caret-left"></i></li>
-				<li class="event">
-					<span>Member B was added</span>
-					<div class="time"><i class="fa fa-clock-o"></i>
-					10 Oct 2014 at 5:00pm
-					</div>
-				</li>				
-			</ul>
-			<div class="space"></div>
-		</div>
-		<div class="startdate">Start</div>
-	</div>
-</div>	
 
+<div class="modal fade" id="full-img" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">The first time joining Demola Oulu
+                <span class="text-right">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-twitter"></i>
+<!--                     <i class="fa fa-pinterest"></i> -->
+                    <i class="fa fa-instagram"></i>
+                </span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <img id="select-img" ng-src="{{img_src}}" class="img-responsive modal-img">
+            </div>
+        </div>
+    </div>
+</div>

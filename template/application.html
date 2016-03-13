@@ -1,0 +1,105 @@
+<div class="animated fadeIn container application">
+    <div class="page-header">
+        <h1 class="animated zoomIn">Application</h1>
+        <h5 class="animated fadeInLeft">Show us your idea !</h5>
+        <h5 class="required">** All fileds with ( * ) need to be filled.</h5>
+    </div>
+
+    <div class="page-content">
+        <div class="applicationform">
+            <form>
+                <div class="form-group">
+                    <label for="project">PROJECT </label>
+                    <input type="text" class="form-control" name="project" placeholder="Create new project">
+                </div>
+
+                <div class="form-group">
+                    <label for="team">Team</label>
+                    <input type="text" class="form-control" name="team" placeholder="Add your team here">
+                </div>
+
+                <div class="form-group">
+                    <label for="team">Team members</label>
+                    <input type="text" class="form-control" name="team" placeholder="Who are the members?">
+                </div>
+
+                <label for="support-type">Support type</label>
+                <div class="radio">
+                    <label><input type="radio" name="optionsRadios" id="business" value="option1" checked> Business support</label>
+                </div>
+
+                <div class="radio">
+                    <label><input type="radio" name="optionsRadios" id="nonebusiness" value="option2">None-profit support
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="team">Organization</label>
+                    <input type="text" class="form-control" name="team" placeholder="What is the organization?">
+                </div>
+
+                <div class="form-group">
+                    <label for="team">Municipality</label>
+                    <select class="form-control">
+                        <option>Alavieska</option>
+                        <option>Hailuoto</option>
+                        <option>Spur</option>
+                        <option>Kuusamo</option>
+                        <option>Oulainen</option>
+                        <option>Oulu</option>
+                        <option>Posio</option>
+                        <option>Raahe</option>
+                        <option>Sievi</option>
+                        <option selected>Tyrnävä</option>
+                        <option>Yli-li</option>
+                        <option>Ylivieska</option>
+                    </select>
+                </div>
+
+                <label>Duration</label>
+                <div class="form-group input-group">
+                    <div class="input-group-addon" class='datetimepicker' data-date-format="YYYY-MM-DD" style="cursor: pointer;"><span class="glyphicon glyphicon-calendar"></span></div>
+                    <input type="text" placeholder="When does project start?" class="form-control" />
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-addon" class='datetimepicker' data-date-format="YYYY-MM-DD" style="cursor: pointer;"><span class="glyphicon glyphicon-calendar"></span></div>
+                    <input type="text" placeholder="When does project finish?" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Funding</label>
+                    <input type="text" placeholder="The amount of funding" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Total budget</label>
+                    <input type="text" placeholder="The amount of total budget" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="project">Description </label>
+                    <textarea class="form-control" >What is your project about?</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputFile">Final picture</label>
+                    <input type="file" id="exampleInputFile">
+                    <div class="picture">
+                        <img src="img/blank-img.png" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputFile">Final video</label>
+                    <input type="file" id="exampleInputFile">
+                    <div class="picture">
+                        <img src="img/blank-img.png" class="img-responsive">
+                    </div>
+                </div>
+
+                <a href="/project"><button type="submit" class="btn btn-default">Submit</button></a>
+            </form>
+        </div>
+    </div>
+
+</div>
