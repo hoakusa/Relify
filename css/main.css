@@ -10,7 +10,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #ba3d30;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -20,7 +19,6 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #d8695e;
 }
 
 ul li {
@@ -49,10 +47,17 @@ p {
 }
 
 .nav > li > a {
-    padding: 26px 10px;
+    padding: 26px 16px;
 }
 
 .navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 15px;
+    display: block;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #e67e22;
     color: #ffffff;
 }
 
@@ -105,7 +110,10 @@ p {
 }
 
 .categories {
-
+    background-image: url("/img/category-blur.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .categories .container {
@@ -117,6 +125,8 @@ p {
 .categories h2 {
     text-align: center;
     font-weight: 700;
+    color: #ffffff;
+    font-size: 28px;
 }
 
 .category-list {
@@ -144,11 +154,10 @@ p {
     color: #fff;
     text-align: center;
     padding: 55px 0;
-    /*background-color: rgba(255,255,255, 0);*/
 }
 
 .categories .column a:hover {
-    background-color: rgba(255,255,255, 0.15);
+    background-color: rgba(255,255,255, 0.2);
 }
 
 .services {
@@ -164,11 +173,13 @@ p {
 .advice-text {
     width: 100%;
     padding-right: 100px;
+    color: #e67e22;
 }
 
 .advice-text p {
     font-size: 16px;
     line-height: 24px;
+    color:#e67e22;
 }
 
 .advice-arrow {
@@ -179,11 +190,11 @@ p {
 
 .advice-arrow a {
     font-size: 48px;
-    color: #4a4a4a;
+    color: #f39c12;
 }
 
 .advice-arrow a:hover {
-    color: #4a4a4a;
+    color: #e67e22;
 }
 
 .services hr {
@@ -214,8 +225,7 @@ p {
 
 .subscribe-form {
     margin: 0 auto;
-    max-width: 400px; 
-    padding: 0 40px;
+    max-width: 400px;
 }
 
 .subscribe-button {
@@ -230,6 +240,10 @@ p {
 
 /*Footer*/
 
+.footer1 {
+    background-color: #dddddd;
+}
+
 .footer1 .container .row {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -243,7 +257,53 @@ p {
 .footer1 .social .icon {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     font-size: 48px;
 }
+
+.footer1 .blog button {
+    font-size: 20px;
+    padding: 12px 16px;
+}
+
+.footer1 a {
+    color: #e67e22;
+}
+
+.footer1 a:hover {
+    color: #e67e22;
+}
+
+.footer2 {
+    background-color: #f39c12;
+}
+
+.footer2 ul li {
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer2 ul li a {
+    color: #ffffff;
+}
+
+.footer2 ul.left-block {
+    float: left;
+    margin-bottom: 0;
+}
+
+.footer2 ul.right-block {
+    float: right;
+    margin-bottom: 0;
+}
+
+.footer2 ul.left-block li {
+    padding: 12px 0;
+}
+
+.footer2 ul.right-block li {
+    padding: 12px 12px;
+}
+
 
